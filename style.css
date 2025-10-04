@@ -1,0 +1,385 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40; /* Dark grey text */
+    line-height: 1.6;
+}
+
+/* Global Container & Section Padding */
+.feature-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #004a99; /* Darker primary blue for headings */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.4rem; }
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* CTA Button Styling */
+.cta-button {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 2rem auto;
+    text-decoration: none; /* For anchor buttons */
+    width: fit-content;
+}
+
+.cta-button:hover {
+    background-color: #003366; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Header & Navigation */
+header {
+    background-color: #004a99; /* Darker primary blue for header */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2rem; /* Keep for fallback if image fails */
+    font-weight: bold;
+    color: white;
+    display: flex; /* To align image and text vertically */
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+    color: white; /* Ensure text color is white */
+    font-size: 2rem; /* Match logo text size */
+    font-weight: bold;
+}
+
+.navbar-logo {
+    height: 60px; /* Increased size for better visibility */
+    width: auto;
+    vertical-align: middle;
+    /* Removed CSS filter for color matching. If the logo color still doesn't match,
+       please provide a blue version of the logo. */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: #cceeff; /* Lighter blue on hover */
+    border-bottom: 2px solid #cceeff;
+}
+
+/* 1. Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #e6f7ff, #cceeff); /* Softer blue gradient */
+    padding: 6rem 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-section h1 {
+    font-size: 3.8rem;
+    color: #004a99; /* Darker primary blue */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 2. Problem We Solve Section */
+.problem-solve-section {
+    text-align: center;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.problem-item {
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.problem-item:hover {
+    transform: translateY(-5px);
+}
+
+.problem-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.problem-item h3 {
+    color: #0066cc; /* Secondary blue */
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.problem-item p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+/* 3. Our Core Services Section */
+.core-services-section {
+    text-align: center;
+}
+
+.service-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-block {
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.service-block:hover {
+    transform: translateY(-5px);
+}
+
+.service-block img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.service-block h3 {
+    color: #004a99; /* Darker primary blue */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-block h4 {
+    color: #0066cc;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.service-block p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+/* 4. How It Works Section */
+.how-it-works-section {
+    text-align: center;
+    background-color: #e6f7ff; /* Light blue background */
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: relative;
+    padding-top: 60px; /* Space for step number */
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004a99; /* Darker primary blue */
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.step-item h3 {
+    color: #0066cc;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-item p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+/* 5. Final Call-to-Action Section */
+.final-cta-section {
+    background-color: #003366; /* Darker blue background */
+    color: white;
+    text-align: center;
+    padding: 4rem 20px;
+    margin-top: 3rem;
+}
+
+.final-cta-section h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.final-cta-section p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    color: #e2e6ea;
+}
+
+/* Footer */
+footer {
+    background-color: #001a33; /* Even darker blue */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 4rem 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .problem-grid, .service-blocks, .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-section {
+        padding: 30px 20px;
+        margin: 2rem auto;
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.2rem; }
+
+    .final-cta-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .final-cta-section p {
+        font-size: 1rem;
+    }
+}
